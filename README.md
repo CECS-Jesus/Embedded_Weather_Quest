@@ -47,10 +47,10 @@ Please choose your query criteria:
 ### Getting Ready for the Project
 
 1. **Hardware Setup:** Stack the TM4C123 LaunchPad and CC3100 Booster Pack, and connect the ST7735R LCD.
-2. **Software Setup**
-Register and note your APPID from openweathermap.org.
-Replace the APPID placeholder in your project with the actual ID.
-Configure your device to connect to an internet access point.
-Test the setup using a serial terminal at 115200 baud rate.
+2. **Software Setup:**
+-Register and note your APPID from openweathermap.org.
+-Replace the APPID placeholder in your project with the actual ID.
+-Configure your device to connect to an internet access point.
+-Test the setup using a serial terminal at 115200 baud rate.
 
 
