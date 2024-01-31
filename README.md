@@ -1,9 +1,4 @@
-
-# CECS 447 Embedded Systems III Final Project
-
-## An Embedded Weather Quest
-
-**Total Points:** 15
+# An Embedded Weather Quest
 
 ### Preparation
 
@@ -51,29 +46,11 @@ Please choose your query criteria:
 
 ### Getting Ready for the Project
 
-**Starter Project:** WeatherQuest
+1. **Hardware Setup:** Stack the TM4C123 LaunchPad and CC3100 Booster Pack, and connect the ST7735R LCD.
+2. **Software Setup**
+Register and note your APPID from openweathermap.org.
+Replace the APPID placeholder in your project with the actual ID.
+Configure your device to connect to an internet access point.
+Test the setup using a serial terminal at 115200 baud rate.
 
-1. **Hardware Setup:** Stack the two boards and connect the Nokia LCD.
-2. **Project Setup:** Download and unzip `WeatherQuest.zip`, open the project in `CC3100GetWeather_4C123`, and recompile.
-3. **Testing:** Modify and test both `main.c` and `mainNokia5110.c` programs as per the instructions below:
-   - Register for an account at [openweathermap.org/appid#use](http://openweathermap.org/appid#use) and note the APPID.
-   - Replace `APPID` in the project with your unique ID.
-   - Set up and connect to an access point using a phone or laptop.
-   - Recompile and test using a serial terminal at 115200 baud rate.
-4. **LCD Replacement:** Substitute the Nokia5110 with the ST7735 color LCD.
-5. **Project Development:** Begin with the working example project and integrate the required features.
 
-### Grading Policy
-
-**Demonstration:** 10 Points
-- Display hardcoded city query on laptop and LCD, with one animation: 60%
-- Add two additional animations: 10%
-- Implement user choice for query criteria: 30%
-
-**Report + Source Code:** 5 Points
-
-### Deliverables
-
-1. **Demonstration:** Present the embedded system to the instructor.
-2. **Final Project Report:** Submit in Word or PDF format, including sections on Operation (with video link), Hardware Design (with schematic and system picture), and any other required information.
-3. **Source Code:** Submit `mainST7735.c`, `ST7735.c/h`, and any additional component code in a zip file.
