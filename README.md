@@ -10,9 +10,7 @@
 
 ### Project Description
 
-In this project, titled "An Embedded Weather Quest," students will leverage the knowledge acquired throughout the semester and previous courses to build an IoT application. The application aims to demonstrate proficiency in several key embedded systems topics, including GPIO, Interrupts, Hardware Timers, UART, Color LCDs, SSI, and WiFi.
-
-Students will construct an embedded system capable of WiFi communication. This system will process user requests from a laptop serial terminal, interact with openweathermap.org for weather data on U.S. cities, and display the obtained weather information on both a laptop serial terminal and a color LCD.
+This system will process user requests from a laptop serial terminal, interact with openweathermap.org for weather data on U.S. cities, and display the obtained weather information on both a laptop serial terminal and a color LCD.
 
 #### User Interface Requirements
 
