@@ -658,19 +658,19 @@ int main(void){
 			}
 			// Display the weather information the LCD	which is recieved from openweathermap.org through the terminal
 			UARTprintf("\r\n\r\n");
-      UARToutString(appData.Recvbuff);  UARTprintf("\r\n");
+      			UARToutString(appData.Recvbuff);  UARTprintf("\r\n");
 			LCD_OutString(request);
 			Output_Clear();
 			ST7735_SetCursor(xPos,yPos);
 			LCD_OutString("Temperature Minimum:");	LCD_OutString(minTemperature); LCD_OutString(" Farenheight\r\n");
 			ST7735_OutString("Temperature Minimum:\r\n");	
 			ST7735_OutString(minTemperature); ST7735_OutString(" Farenheight\r\n");
-      LCD_OutString("Temperature Maximum:"); LCD_OutString(maxTemperature); LCD_OutString(" Farenheight\r\n");
+      			LCD_OutString("Temperature Maximum:"); LCD_OutString(maxTemperature); LCD_OutString(" Farenheight\r\n");
 			ST7735_OutString("Temperature Maximum:\r\n"); 
 			ST7735_OutString(maxTemperature); ST7735_OutString(" Farenheight\r\n");
 			LCD_OutString("Humidity:"); LCD_OutString(Humidty); LCD_OutString("\r\n");
 			ST7735_OutString("Humidity:"); ST7735_OutString(Humidty); ST7735_OutString("\r\n");
-      LCD_OutString("Weather:"); LCD_OutString(Weather); LCD_OutString("\r\n");
+     			LCD_OutString("Weather:"); LCD_OutString(Weather); LCD_OutString("\r\n");
 			ST7735_OutString("Weather:"); ST7735_OutString(Weather); ST7735_OutString("\r\n");
     }
 		
