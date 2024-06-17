@@ -151,34 +151,35 @@ void LCD_OutString(char *pcBuf){
   UARTprintf(pcBuf);          // send to UART
 }
 void LCD_Init(void){
-  Nokia5110_Init();
-  Nokia5110_Clear();
+	Nokia5110_Init();
+  	Nokia5110_Clear();
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
 	GPIOPinConfigure(GPIO_PA0_U0RX);
 	GPIOPinConfigure(GPIO_PA1_U0TX);
 //	ROM_GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
 	GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
-  UARTStdioConfig(0,115200,50000000);
+ 	UARTStdioConfig(0,115200,50000000);
 }
 void UARToutString(char *pcBuf){
   char myBuf[2];
   myBuf[1] = 0;
   uint32_t charCount=0;
   while(*pcBuf){
-    myBuf[0] = *pcBuf;
-    UARTprintf(myBuf); // one character at a time
-    if(*pcBuf == '\n'){
-      charCount = 0;
-    }else{
-      charCount++;
-      if(charCount>50){
-    	charCount = 0;
-    	myBuf[0] = '\n';
-    	UARTprintf(myBuf);
-      }
-    }
-    pcBuf++;
+  	myBuf[0] = *pcBuf;
+    	UARTprintf(myBuf); // one character at a time
+    	if(*pcBuf == '\n'){
+      		charCount = 0;
+    	}
+	else{
+      		charCount++;
+      		if(charCount>50){
+    			charCount = 0;
+    			myBuf[0] = '\n';
+    			UARTprintf(myBuf);
+        	}
+	}
+    	pcBuf++;
   }
 }
 
