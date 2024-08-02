@@ -114,6 +114,12 @@ Port A, SSI0 (PA2, PA3, PA5, PA6, PA7) sends data to Nokia5110 LCD
 
 // these three strings will be filled by getWeather
 #define MAXLEN 100
+
+// To Do: replace the following three lines with your access point information
+#define SSID_NAME  "BOOK-RAD73LDTQ2 9136"/* Access point name to connect to */
+#define SEC_TYPE   SL_SEC_TYPE_WPA
+#define PASSKEY    "weather_quest"  /* Password in case of secure AP */ 
+
 char City[MAXLEN];
 char Temperature[MAXLEN];
 char Weather[MAXLEN];
@@ -140,11 +146,6 @@ int16_t height = 30;
 int16_t object = 0;
 int16_t clear = 0;
 int index = 0;
-
-// To Do: replace the following three lines with your access point information
-#define SSID_NAME  "BOOK-RAD73LDTQ2 9136"/* Access point name to connect to */
-#define SEC_TYPE   SL_SEC_TYPE_WPA
-#define PASSKEY    "weather_quest"  /* Password in case of secure AP */ 
 
 void LCD_OutString(char *pcBuf){
   Nokia5110_OutString(pcBuf); // send to LCD
