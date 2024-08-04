@@ -44,10 +44,6 @@ Please choose your query criteria:
 
 ### Getting Ready for the Project
 
-[cc3100_quick_start_guide](cc3100_quick_start_guide.pdf)  
-[City List (JSON) for OpenWeatherMap](city.list.json.gz)  
-[Starter Project](WeatherQuesterStarter.zip)
-
 How to find an access point: Turn on the hot spot, then you will have an access point from your phone. Both iPhone and Samsung phones by default use WPA encryption. You can also change the encryption. Make sure there is no space in your access point name.
 
 We can use city ID to query the weather. See a list of city IDs in the attached file: city.list.json.gz. You need to unzip it and then use notepad or notepad plus to open it.
