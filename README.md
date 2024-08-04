@@ -46,10 +46,6 @@ Please choose your query criteria:
 
 How to find an access point: Turn on the hot spot, then you will have an access point from your phone. Both iPhone and Samsung phones by default use WPA encryption. You can also change the encryption. Make sure there is no space in your access point name.
 
-We can use city ID to query the weather. See a list of city IDs in the attached file: city.list.json.gz. You need to unzip it and then use notepad or notepad plus to open it.
-
-Syntax for using city ID to access weather information for the city:
-
 ```C
 #define REQUEST "GET /data/2.5/weather?id=5367929&APPID=83dc682a0126fd6a9bb93b6eb3e6a7eb&units=metric HTTP/1.1\r\nUser-Agent: Keil\r\nHost:api.openweathermap.org\r\nAccept: */*\r\n\r\n"
 ```
