@@ -88,3 +88,8 @@ In order to have your smart object interact with **openweathermap.org**, you nee
 4. Copy the API key to main file within the `REQUEST` macro.
     - #define REQUEST "GET /data/2.5/weather?id=5367929&APPID=`PASTHERE`&units=metric HTTP/1.1\r\nUser-Agent: Keil\r\nHost:api.openweathermap.org\r\nAccept: */*\r\n\r\n"
 
+## Demo of my Project:
+1. https://www.youtube.com/shorts/EufjLDDIYoo
+2. https://youtube.com/shorts/ZgdQjBdYukM?si=SUhqhjGBnvlbmVG-
+3. https://youtube.com/shorts/3MAA7-qMs5E?si=NQFhtQQoTXmECrVm
+4. https://youtube.com/shorts/IgzhBngXY0o?si=o_bp0oBKdZusjZWn
